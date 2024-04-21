@@ -1,0 +1,38 @@
+
+print("R for Reverse order and F for Forward order.")
+o1 = input("Enter your choice: ")
+if o1 == "R":
+    print("You have choose Reverse order.")
+    sp = int(input("Enter starting point: "))
+    ep = int(input("Enter ending point: "))
+    print("r for Row order and c for Column order.")
+    o2 = input("Enter your choice: ")
+    if o2 == "r":
+        print("You have choose Row order.")
+        for x in range(sp, ep, -1):
+            print(x, end = " ")
+    elif o2 == "c":
+        print("You have choose Column order.")
+        for x in range(sp, ep, -1):
+            print(x)
+    else:
+        print("You have choose Invalid choice.")
+elif o1 == "F":
+    print("You have choose Forward order.")
+    sp = int(input("Enter starting point: "))
+    ep = int(input("Enter ending point: "))
+    print("r for Row order and c for Column order.")
+    o2 = input("Enter your choice: ")
+    if o2 == "r":
+        print("You have choose Row order.")
+        for x in range(sp, ep, 1):
+            print(x, end = " ")
+    elif o2 == "c":
+        print("You have choose Column order.")
+        for x in range(sp, ep, 1):
+            print(x)
+    else:
+        print("Invalid choice")
+else:    
+    print("Invalid choice")
+print("THANKYOU USER :)")
