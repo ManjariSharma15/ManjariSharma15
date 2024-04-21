@@ -1,0 +1,16 @@
+import random
+    
+n = random.randint(1, 10)
+g = None
+    
+while g != n:
+    g = input("guess a number between 1 and 10: ")
+    g = int(g)
+    
+    if g == n:
+        print("congratulations! You're a winner!")
+        print(g)
+        break
+    else:
+        print("Try again!")
+print("Thank You")
