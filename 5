@@ -1,0 +1,27 @@
+inventry={}
+while True:
+     a=input()
+     if a=="add":
+          i=input()
+          q=int(input())
+          if i in inventry:
+               inventry[i]+=q
+          else:
+               inventry[i]=q
+     elif a=="remove":
+          i=input()
+          q=int(input())
+          if i in inventry and inventry[i]>=q:
+               inventry[i]-=q
+          elif i in inventry and inventry[i]<q:
+               print(f"There are only {inventry[i]} {i}s left in the inventry.")
+          else:
+               print(f"There is no {i} in the inventry.")
+     elif a=="display":
+          print("Inventry")
+          for key, value in inventry.i():
+               print(f"{key} : {value}")
+     elif a=="quit":
+          break
+     else:
+          print("Invalid action")
