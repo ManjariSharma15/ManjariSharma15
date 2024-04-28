@@ -1,31 +1,30 @@
 ## Make a mini project for student report card with %age and grades.
- name = input("Enter ur name: ")
- m1 = int(input("Enter marks for 1st sub: "))
- m2 = int(input("Enter marks for 2nd sub: "))
- m3 = int(input("Enter marks for 3rd sub: "))
- m4 = int(input("Enter marks for 4th sub: "))
- m5 = int(input("Enter marks for 5th sub: "))
- p = ((m1+m2+m3+m4+m5)/5)
- if (m1, m2, m3, m4, m5 > 100):
-     print("Invalid Marks.")
- else:
-     if 90<p<=100:
-         print("A")
-         print(p, "%")
-     elif 80<p<=90:
-         print("B")
-         print(p, "%")
-     elif 70<p<=80:
-         print("C")
-         print(p, "%")
-     elif 60<p<=70:
-         print("D")
-         print(p, "%")
-     elif 50<p<=60:
-         print("E")
-         print(p, "%")
-     else:
-         print("FAIL!")
-if p > 100:
-     print("Invalid")
+name = input("Enter ur name: ")
+m1 = int(input("Enter marks for 1st sub: "))
+m2 = int(input("Enter marks for 2nd sub: "))
+m3 = int(input("Enter marks for 3rd sub: "))
+m4 = int(input("Enter marks for 4th sub: "))
+m5 = int(input("Enter marks for 5th sub: "))
+p = ((m1+m2+m3+m4+m5)/5)
+print(p)
+if (p==100):
+    print("A+")
+    print(p,"%")
+elif 90<p<=100:
+    print("A")
+    print(p, "%")
+elif 80<p<=90:
+    print("B")
+    print(p, "%")
+elif 70<p<=80:
+    print("C")
+    print(p, "%")
+elif 60<p<=70:
+    print("D")
+    print(p, "%")
+elif 50<p<=60:
+    print("E")
+    print(p, "%")
+else:
+    print("FAIL!")
 
