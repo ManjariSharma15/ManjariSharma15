@@ -1,19 +1,18 @@
 name = input("Enter ur name: ")
-id = int(input("Enter your aadhar number: "))
 age = int(input("Enter ur age: "))
 if age >= 18:
     print("Eligible to vote.")
     print("1 for BJP, 2 for Cogress, 3 for SPA, 4 for AAP, 5 for NONE.")
-    vote = input("Enter your vote: ")
-    if vote == 1:
+    v = int(input("Enter your vote: "))
+    if v == 1:
         print("BJP")
-    elif vote == 2:
+    elif v == 2:
         print("Congress")
-    elif vote == 3:
+    elif v == 3:
         print("SPA")
-    elif vote == 4:
+    elif v == 4:
         print("AAP")
-    elif vote == 5:
+    elif v == 5:
         print("None")
     else:
         print("Wrong details entered.")
